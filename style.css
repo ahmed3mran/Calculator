@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color:#001C30;
+  --second-color:#176B87;
+  --third-color:#64CCC5;
+  --four-color:#DAFFFB;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #040D12;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  height: calc(80px * 6);
+  width: calc(80px*4);
+  border: 1px solid var(--second-color);
+  border-radius: 20px;
+}
+input{
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-bottom:1px solid var(--second-color) ;
+  background-color: var(--four-color);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-weight: bold;
+
+}
+.row{
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+button{
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid var(--second-color);
+  outline: none;
+  background-color: var(--third-color);
+  color: #Fff;
+}
+button:hover{
+  background-color: var(--four-color);
+  color: #000;
+  transition: 0.08s;
+}
+.active{
+  width: calc(80px*2);
+  background-color: var(--second-color);
+  border-bottom-right-radius: 20px;
+}
+.hi{
+  border-bottom-left-radius: 20px;
+}
+.active:hover{
+  background-color: var(--second-color);
+  color: #fff;
+}
+

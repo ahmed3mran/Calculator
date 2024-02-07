@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <input type="text" class="header" id="display">
+    <div class="row">
+      <button onclick="clearScreean()" >C</button>
+      <button onclick="calcute()">+/-</button>
+      <button onclick="calcute('%')">%</button>
+      <button onclick="calcute('/')">/</button>
+    </div>
+    <div class="row">
+      <button onclick="calcute('7')" >7</button>
+      <button onclick="calcute('8')">8</button>
+      <button onclick="calcute('9')">9</button>
+      <button onclick="calcute('*')">*</button>
+    </div>
+    <div class="row">
+      <button onclick="calcute('4')">4</button>
+      <button onclick="calcute('5')">5</button>
+      <button onclick="calcute('6')">6</button>
+      <button onclick="calcute('-')">-</button>
+    </div>
+    <div class="row">
+      <button onclick="calcute('1')">1</button>
+      <button onclick="calcute('2')">2</button>
+      <button onclick="calcute('3')">3</button>
+      <button onclick="calcute('+')">+</button>
+    </div>
+    <div class="row">
+      <button onclick="calcute('0')" class="hi">0</button>
+      <button onclick="calcute('.')" >.</button>
+      <button onclick="calc()" class="active">=</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
